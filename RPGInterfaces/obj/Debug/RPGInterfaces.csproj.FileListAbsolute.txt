@@ -1,0 +1,16 @@
+\\home0.coeit.osu.edu\d\davis.4752\cse\windows\davis.4752\Documents\RPGInterfaces\RPGInterfaces\bin\Debug\RPGInterfaces.dll
+\\home0.coeit.osu.edu\d\davis.4752\cse\windows\davis.4752\Documents\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.dll
+\\home0.coeit.osu.edu\d\davis.4752\cse\windows\davis.4752\Documents\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.pdb
+\\home0.coeit.osu.edu\d\davis.4752\cse\windows\davis.4752\Documents\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.csprojResolveAssemblyReference.cache
+E:\RPGInterfaces\RPGInterfaces\bin\Debug\RPGInterfaces.dll
+E:\RPGInterfaces\RPGInterfaces\bin\Debug\RPGInterfaces.pdb
+E:\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.csprojAssemblyReference.cache
+E:\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.csproj.CoreCompileInputs.cache
+E:\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.dll
+E:\RPGInterfaces\RPGInterfaces\obj\Debug\RPGInterfaces.pdb
+E:\PA2\RPGInterfaces\bin\Debug\RPGInterfaces.dll
+E:\PA2\RPGInterfaces\bin\Debug\RPGInterfaces.pdb
+E:\PA2\RPGInterfaces\obj\Debug\RPGInterfaces.csprojAssemblyReference.cache
+E:\PA2\RPGInterfaces\obj\Debug\RPGInterfaces.csproj.CoreCompileInputs.cache
+E:\PA2\RPGInterfaces\obj\Debug\RPGInterfaces.dll
+E:\PA2\RPGInterfaces\obj\Debug\RPGInterfaces.pdb
