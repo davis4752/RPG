@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B8A7CF6-0031-4599-8FCA-94BD2E854826}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WPFBattle</RootNamespace>
+    <AssemblyName>WPFBattle</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ArcherView.cs" />
+    <Compile Include="CharacterImage.cs" />
+    <Compile Include="ComputerWizardView.cs" />
+    <Compile Include="DisplayBadGradeAttack.cs" />
+    <Compile Include="DisplayBowAttack.cs" />
+    <Compile Include="DisplayFireAttack.cs" />
+    <Compile Include="DisplaySwordAttack.cs" />
+    <Compile Include="MageView.cs" />
+    <Compile Include="NormalAttackView.cs" />
+    <Compile Include="TextBoxStreamWriter.cs" />
+    <Compile Include="WarriorView.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CombatThread.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\RPGLibrary\RPGInterfaces\RPGInterfaces.csproj">
+      <Project>{fb3d3f5a-2507-4c59-8897-a6121c6af0c2}</Project>
+      <Name>RPGInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\RPGLibrary\RPGTester\RPGTester.csproj">
+      <Project>{e90d2146-f09d-4b55-b0ba-3d58c756de6f}</Project>
+      <Name>RPGTester</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Content\Background.png" />
+    <Resource Include="Content\Flare_attack.png" />
+    <Resource Include="Content\Flare_dead.png" />
+    <Resource Include="Content\Flare_hurt.png" />
+    <Resource Include="Content\Flare_idle.png" />
+    <Content Include="Content\gavel.wav" />
+    <Resource Include="Content\Riku_attack.png" />
+    <Resource Include="Content\Riku_dead.png" />
+    <Resource Include="Content\Riku_hurt.png" />
+    <Resource Include="Content\Riku_idle.png" />
+    <Content Include="Content\Spellcast.wav" />
+    <Content Include="Content\sthswng1.WAV" />
+    <Content Include="Content\Swoosh.wav" />
+    <Resource Include="Content\Vexen_attack.png" />
+    <Resource Include="Content\Vexen_dead.png" />
+    <Resource Include="Content\Vexen_hurt.png" />
+    <Resource Include="Content\Vexen_idle.png" />
+    <Resource Include="Content\Xenmas_attack.png" />
+    <Resource Include="Content\Xenmas_dead.png" />
+    <Resource Include="Content\Xenmas_hurt.png" />
+    <Resource Include="Content\Xenmas_idle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
